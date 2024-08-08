@@ -1,0 +1,17 @@
+C:\Users\Juan\Desktop\Proyectos-Develop\Spring Boot Java\bazar_api\bazar_api\src\main\java\com\example\bazar_api\BazarApiApplication.java
+C:\Users\Juan\Desktop\Proyectos-Develop\Spring Boot Java\bazar_api\bazar_api\src\main\java\com\example\bazar_api\controller\ClienteController.java
+C:\Users\Juan\Desktop\Proyectos-Develop\Spring Boot Java\bazar_api\bazar_api\src\main\java\com\example\bazar_api\controller\ProductoController.java
+C:\Users\Juan\Desktop\Proyectos-Develop\Spring Boot Java\bazar_api\bazar_api\src\main\java\com\example\bazar_api\controller\VentaController.java
+C:\Users\Juan\Desktop\Proyectos-Develop\Spring Boot Java\bazar_api\bazar_api\src\main\java\com\example\bazar_api\dto\VentaDTO.java
+C:\Users\Juan\Desktop\Proyectos-Develop\Spring Boot Java\bazar_api\bazar_api\src\main\java\com\example\bazar_api\model\Cliente.java
+C:\Users\Juan\Desktop\Proyectos-Develop\Spring Boot Java\bazar_api\bazar_api\src\main\java\com\example\bazar_api\model\Producto.java
+C:\Users\Juan\Desktop\Proyectos-Develop\Spring Boot Java\bazar_api\bazar_api\src\main\java\com\example\bazar_api\model\Venta.java
+C:\Users\Juan\Desktop\Proyectos-Develop\Spring Boot Java\bazar_api\bazar_api\src\main\java\com\example\bazar_api\repository\IClienteRepository.java
+C:\Users\Juan\Desktop\Proyectos-Develop\Spring Boot Java\bazar_api\bazar_api\src\main\java\com\example\bazar_api\repository\IProductoRepository.java
+C:\Users\Juan\Desktop\Proyectos-Develop\Spring Boot Java\bazar_api\bazar_api\src\main\java\com\example\bazar_api\repository\IVentaRepository.java
+C:\Users\Juan\Desktop\Proyectos-Develop\Spring Boot Java\bazar_api\bazar_api\src\main\java\com\example\bazar_api\service\ClienteService.java
+C:\Users\Juan\Desktop\Proyectos-Develop\Spring Boot Java\bazar_api\bazar_api\src\main\java\com\example\bazar_api\service\IClienteService.java
+C:\Users\Juan\Desktop\Proyectos-Develop\Spring Boot Java\bazar_api\bazar_api\src\main\java\com\example\bazar_api\service\IProductoService.java
+C:\Users\Juan\Desktop\Proyectos-Develop\Spring Boot Java\bazar_api\bazar_api\src\main\java\com\example\bazar_api\service\IVentaService.java
+C:\Users\Juan\Desktop\Proyectos-Develop\Spring Boot Java\bazar_api\bazar_api\src\main\java\com\example\bazar_api\service\ProductoService.java
+C:\Users\Juan\Desktop\Proyectos-Develop\Spring Boot Java\bazar_api\bazar_api\src\main\java\com\example\bazar_api\service\VentaService.java

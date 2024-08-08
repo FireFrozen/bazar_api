@@ -1,0 +1,17 @@
+com\example\bazar_api\service\ClienteService.class
+com\example\bazar_api\service\VentaService.class
+com\example\bazar_api\service\ProductoService.class
+com\example\bazar_api\service\IClienteService.class
+com\example\bazar_api\BazarApiApplication.class
+com\example\bazar_api\controller\ClienteController.class
+com\example\bazar_api\controller\VentaController.class
+com\example\bazar_api\model\Venta.class
+com\example\bazar_api\controller\ProductoController.class
+com\example\bazar_api\model\Cliente.class
+com\example\bazar_api\service\IProductoService.class
+com\example\bazar_api\model\Producto.class
+com\example\bazar_api\repository\IProductoRepository.class
+com\example\bazar_api\repository\IVentaRepository.class
+com\example\bazar_api\dto\VentaDTO.class
+com\example\bazar_api\repository\IClienteRepository.class
+com\example\bazar_api\service\IVentaService.class
