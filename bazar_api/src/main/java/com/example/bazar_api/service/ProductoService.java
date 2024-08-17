@@ -34,7 +34,7 @@ public class ProductoService implements IProductoService {
     }
 
     @Override
-    public void editarProducto(Producto produ) {
+    public void editarProducto(Producto produ, Long codigo_producto) {
        prodRepo.save(produ);
     }
 

@@ -16,7 +16,7 @@ public interface IProductoService {
 
     public void borrarProducto(Long id);
 
-    public void editarProducto(Producto produ);
+    public void editarProducto(Producto produ, Long codigo_producto);
 
     public List<Producto> traerProductosFaltaStock();
     

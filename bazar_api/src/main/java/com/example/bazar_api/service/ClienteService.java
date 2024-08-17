@@ -34,8 +34,9 @@ public class ClienteService implements IClienteService {
     }
 
     @Override
-    public void editarCliente(Cliente cli) {
-       clienteRepo.save(cli);
+    public void editarCliente(Cliente cli, Long id) {
+        cli.setId_cliente(id);
+        clienteRepo.save(cli);
     }
     
 }

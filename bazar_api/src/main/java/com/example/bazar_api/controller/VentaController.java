@@ -10,7 +10,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin(origins ={"http://localhost","*"} )
 @RestController
 public class VentaController {
     @Autowired
@@ -57,7 +56,7 @@ public class VentaController {
     
     @PutMapping("ventas/editar/{codigo_venta}")
     public Venta editarVenta(@PathVariable Long codigo_venta, @RequestBody Venta vent){       
-        ventaServ.editarVenta(vent);
+        ventaServ.editarVenta(vent, codigo_venta);
         return ventaServ.findVenta(codigo_venta);
     }
     

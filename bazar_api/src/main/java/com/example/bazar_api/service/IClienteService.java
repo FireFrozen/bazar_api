@@ -15,6 +15,6 @@ public interface IClienteService {
 
     public Cliente findClientes(Long id_cliente);
 
-    public void editarCliente(Cliente cli);
+    public void editarCliente(Cliente cli, Long id);
     
 }

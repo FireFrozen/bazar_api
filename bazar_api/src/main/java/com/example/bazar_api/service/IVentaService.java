@@ -18,7 +18,7 @@ public interface IVentaService {
 
     public void borrarVenta(Long codigo_venta);
 
-    public void editarVenta(Venta vent);
+    public void editarVenta(Venta vent, Long codigo_venta);
 
     public List<Producto> findVentaProductos(Long codigo_venta);
 

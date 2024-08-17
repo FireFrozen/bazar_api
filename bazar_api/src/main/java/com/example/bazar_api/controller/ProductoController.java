@@ -7,7 +7,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin(origins ={"http://localhost","*"} )
 @RestController
 public class ProductoController {
     
@@ -45,7 +44,7 @@ public class ProductoController {
     
     @PutMapping("productos/editar/{codigo_producto}")
     public Producto editarProducto(@PathVariable Long codigo_producto, @RequestBody Producto produ){       
-        prodServ.editarProducto(produ);
+        prodServ.editarProducto(produ, codigo_producto);
         return prodServ.findProducto(codigo_producto);
     }
 }

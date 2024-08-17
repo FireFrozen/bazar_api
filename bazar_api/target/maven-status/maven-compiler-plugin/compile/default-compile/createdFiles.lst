@@ -8,6 +8,7 @@ com\example\bazar_api\controller\VentaController.class
 com\example\bazar_api\model\Venta.class
 com\example\bazar_api\controller\ProductoController.class
 com\example\bazar_api\model\Cliente.class
+com\example\bazar_api\configuration\WebConfig.class
 com\example\bazar_api\service\IProductoService.class
 com\example\bazar_api\model\Producto.class
 com\example\bazar_api\repository\IProductoRepository.class

@@ -70,7 +70,7 @@ public class VentaService implements IVentaService{
             for(Producto prod : listaProductos){
 
                 prod.setCantidad_disponible(prod.getCantidad_disponible()-1);
-                prodServ.editarProducto(prod);
+                prodServ.editarProducto(prod, prod.getCodigo_producto());
                 //System.out.println(prod.toString());
             }
         }
@@ -94,7 +94,8 @@ public class VentaService implements IVentaService{
     }
 
     @Override
-    public void editarVenta(Venta vent) {
+    public void editarVenta(Venta vent,Long codigo_venta) {
+        vent.setCodigo_venta(codigo_venta);
         ventaRepo.save(vent);
     }
 
@@ -168,6 +169,6 @@ public class VentaService implements IVentaService{
         List<Producto> listaProductos = venta.getListaProductos();
         listaProductos.clear();
         venta.setListaProductos(listaProductos);
-        this.editarVenta(venta);
+        this.editarVenta(venta, codigo_venta);
     }
 }

@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@CrossOrigin(origins ={"http://localhost","*"} )
 public class ClienteController {
     
     @Autowired
@@ -41,7 +40,7 @@ public class ClienteController {
     
     @PutMapping("clientes/editar/{id}")
     public Cliente editarClientes(@PathVariable Long id, @RequestBody Cliente cli){       
-        clienteServ.editarCliente(cli);
+        clienteServ.editarCliente(cli, id);
         return clienteServ.findClientes(id);
     }
 }
