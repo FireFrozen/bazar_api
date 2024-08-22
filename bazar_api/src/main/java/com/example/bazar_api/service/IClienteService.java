@@ -16,5 +16,6 @@ public interface IClienteService {
     public Cliente findClientes(Long id_cliente);
 
     public void editarCliente(Cliente cli, Long id);
-    
+
+    Cliente findClientesbyDni(String dni);
 }

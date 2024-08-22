@@ -38,5 +38,10 @@ public class ClienteService implements IClienteService {
         cli.setId_cliente(id);
         clienteRepo.save(cli);
     }
-    
+
+    @Override
+    public Cliente findClientesbyDni(String dni) {
+        return clienteRepo.traerClienteByDni(dni);
+    }
+
 }

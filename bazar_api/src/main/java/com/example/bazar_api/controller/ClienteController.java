@@ -25,6 +25,13 @@ public class ClienteController {
         
         return clienteServ.findClientes(id_cliente);
     }
+
+    //Endpoint para trar un cliente por su DNI
+    @GetMapping("clientes/dni/{dni}")
+    public Cliente findClientesbyDni(@PathVariable String dni){
+
+        return clienteServ.findClientesbyDni(dni);
+    }
     
     @PostMapping("clientes/crear")
     public String crearClientes(@RequestBody Cliente cli){
