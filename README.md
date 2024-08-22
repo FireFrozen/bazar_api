@@ -1,5 +1,7 @@
 # **Requires a DataBase MySQL called "bazar_db" with port 3306 for Local Run**
 
+Change variables in "bazar_api/src/main/resources/application.properties"
+
 **Enviroment variables: <br>**
 - DB_USER_NAME = admin <br>
 - DB_PASSWORD = admin <br>
