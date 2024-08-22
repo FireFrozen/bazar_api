@@ -1,4 +1,4 @@
-# **Requires a DataBase MySQL called "bazar_db" with port 3306**
+# **Requires a DataBase MySQL called "bazar_db" with port 3306 for Local Run**
 
 **Enviroment variables: <br>**
 - DB_USER_NAME = admin <br>
