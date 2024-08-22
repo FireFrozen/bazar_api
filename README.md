@@ -5,5 +5,5 @@
 - DB_PASSWORD = admin <br>
 - DB_URL = jdbc:mysql://localhost:3306/bazar_db?useSSL=false&serverTimezone=UTC
 
-if you use anothe port like 3307: <br>
+if you use another port like 3307: <br>
 - DB_URL = jdbc:mysql://localhost:3307/bazar_db?useSSL=false&serverTimezone=UTC
