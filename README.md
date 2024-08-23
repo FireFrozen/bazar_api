@@ -20,16 +20,16 @@ Endpoints:
 
 # Client Endpoints:
 - Endpoint to get all the clients: <br>
-**GET** "/clientes"
+**GET**   "/clientes"
 
 - Endpoint to get an especific client: <br>
-**GET** "/clientes/{id_cliente}"
+**GET**   "/clientes/{id_cliente}"
 
 - Endpoint to get an especific client by DNI: <br>
-**GET** "/clientes/dni/{dni}"
+**GET**   "/clientes/dni/{dni}"
 
 - Endpoint to create a cliente: <br>
-**POST** "/clientes/crear"  <br>
+**POST**   "/clientes/crear"  <br>
 Example of the json:
 
 ```
@@ -41,10 +41,10 @@ Example of the json:
 }
 ```
 - Endpoint to delete a cliente by id: <br>
-**DELETE** "/clientes/eliminar/{id}"
+**DELETE**   "/clientes/eliminar/{id}"
 
 - Endpoint to edit a cliente: <br>
-**PUT** "/clientes/editar/{id}"  <br>
+**PUT**   "/clientes/editar/{id}"  <br>
 Example of the json:
 
 ```
@@ -58,16 +58,16 @@ Example of the json:
 
 # Product Endpoints:
 - Endpoint to get all the products: <br>
-**GET** "/productos"
+**GET**   "/productos"
 
 - Endpoint to get an especific client: <br>
-**GET** "/productos/{codigo_producto}"
+**GET**   "/productos/{codigo_producto}"
 
 - Endpoint to get all the products that has 5 or less units: <br>
-**GET** "/productos/falta_stock"
+**GET**   "/productos/falta_stock"
 
 - Endpoint to create a product: <br>
-**POST** "/productos/crear"  <br>
+**POST**   "/productos/crear"  <br>
 Example of the json: 
 
 ```
@@ -80,10 +80,10 @@ Example of the json:
 }
 ```
 - Endpoint to delete a product by id: <br>
-**DELETE** "/productos/eliminar/{codigo_producto}"
+**DELETE**   "/productos/eliminar/{codigo_producto}"
 
 - Endpoint to edit a product: <br>
-**PUT** "/productos/editar/{codigo_producto}"  <br>
+**PUT**   "/productos/editar/{codigo_producto}"  <br>
 Example of the json:
 
 ```
@@ -97,21 +97,21 @@ Example of the json:
 ```
 # Ventas (sales) Endpoints:
 - Endpoint to get all the sales: <br>
-**GET** "/ventas"
+**GET**   "/ventas"
 
 - Endpoint to get an especific sale: <br>
-**GET** "/ventas/{codigo_venta}"
+**GET**   "/ventas/{codigo_venta}"
 
 - Endpoint to get the list of products of a sale: <br>
-**GET** "/ventas/productos/{codigo_venta}"
+**GET**   "/ventas/productos/{codigo_venta}"
 
 - Endpoint to get the total mount of the sales of a day and the number of sales: <br>
-**GET** "/ventas/dia/{fecha_venta}"  <br>
+**GET**   "/ventas/dia/{fecha_venta}"  <br>
 Response: "La sumatoria del monto del día es: " + montoTotal + " soles <br>"+
                "La cantidad total de ventas del día: " + cont;
 
 - Endpoint to get the sale withe the higger mount: <br>
-**GET** "/ventas/mayor_venta"  <br>
+**GET**   "/ventas/mayor_venta"  <br>
 Example of response:
 ```
 {
@@ -125,7 +125,7 @@ Example of response:
   
 - Endpoint to create a sale: <br>
 *You need create the clients and products previously before use this* <br>
-**POST** "/ventas/crear"  <br>
+**POST**   "/ventas/crear"  <br>
 Example of the json:
 
 ```
@@ -156,11 +156,11 @@ Example of the json:
 }
 ```
 - Endpoint to delete a sale by id : <br>
-**DELETE** "/ventas/eliminar/{codigo_venta}" <br>
+**DELETE**   "/ventas/eliminar/{codigo_venta}" <br>
 *if you delete a sale, the stack of each product in the sale products are replenished.*
 
 - Endpoint to edit a sale: <br>
-**PUT** "ventas/editar/{codigo_venta}"
+**PUT**   "ventas/editar/{codigo_venta}"
 
 
 
