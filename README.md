@@ -116,11 +116,11 @@ Response: "La sumatoria del monto del día es: " + montoTotal + " soles <br>"+
 Example of response:
 ```
 {
-    "codigo_producto":"0",  
-    "nombre": "Filete de Atún FLORIDA en Agua 110kcal Lata 150g" ,
-    "marca":"FLORIDA" ,
-    "costo":"7" ,
-    "cantidad_disponible":"40"
+    "codigo_venta": 1,
+    "total": 11,
+    "cantidadDeProductos": 2,
+    "nombreCliente": "Luis",
+    "apellidoCliente": "Luna"
 }
 ```
   
