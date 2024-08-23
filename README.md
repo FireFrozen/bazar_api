@@ -1,7 +1,7 @@
 # **Documentation of bazar_api**
 This project is useful to management of a bazaar's sales with a system of descount of the product's stock when a sales is generated.
 
-Requires a DataBase MySQL called "bazar_db" with port 3306 for Local Run
+Requires a DataBase MySQ, in this case called "bazar_db" with port 3306 for Local Run
 
 Change variables in "bazar_api/src/main/resources/application.properties"
 
@@ -18,7 +18,7 @@ This project was deployed in http://vps-4263643-x.dattaweb.com:8080
 Endpoints:
 
 
-# Client
+# Client Endpoints:
 - Endpoint to get all the clients: <br>
 **GET** "/clientes"
 
@@ -29,7 +29,7 @@ Endpoints:
 **GET** "/clientes/dni/{dni}"
 
 - Endpoint to create a cliente: <br>
-**POST** "/clientes/crear"
+**POST** "/clientes/crear"  <br>
 Example of the json:
 
 ```
@@ -44,7 +44,7 @@ Example of the json:
 **DELETE** "/clientes/eliminar/{id}"
 
 - Endpoint to edit a cliente: <br>
-**PUT** "/clientes/editar/{id}"
+**PUT** "/clientes/editar/{id}"  <br>
 Example of the json:
 
 ```
@@ -56,8 +56,7 @@ Example of the json:
 }
 ```
 
-
-# Product
+# Product Endpoints:
 - Endpoint to get all the products: <br>
 **GET** "/productos"
 
@@ -68,8 +67,8 @@ Example of the json:
 **GET** "/productos/falta_stock"
 
 - Endpoint to create a product: <br>
-**POST** "/productos/crear"
-Example of the json:
+**POST** "/productos/crear"  <br>
+Example of the json: 
 
 ```
 {
@@ -84,7 +83,7 @@ Example of the json:
 **DELETE** "/productos/eliminar/{codigo_producto}"
 
 - Endpoint to edit a product: <br>
-**PUT** "/productos/editar/{codigo_producto}"
+**PUT** "/productos/editar/{codigo_producto}"  <br>
 Example of the json:
 
 ```
@@ -96,7 +95,7 @@ Example of the json:
     "cantidad_disponible":"40"
 }
 ```
-# Ventas (sales)
+# Ventas (sales) Endpoints:
 - Endpoint to get all the sales: <br>
 **GET** "/ventas"
 
@@ -107,12 +106,12 @@ Example of the json:
 **GET** "/ventas/productos/{codigo_venta}"
 
 - Endpoint to get the total mount of the sales of a day and the number of sales: <br>
-**GET** "/ventas/dia/{fecha_venta}"
+**GET** "/ventas/dia/{fecha_venta}"  <br>
 Response: "La sumatoria del monto del día es: " + montoTotal + " soles <br>"+
                "La cantidad total de ventas del día: " + cont;
 
 - Endpoint to get the sale withe the higger mount: <br>
-**GET** "/ventas/mayor_venta"
+**GET** "/ventas/mayor_venta"  <br>
 Example of response:
 ```
 {
@@ -126,7 +125,7 @@ Example of response:
   
 - Endpoint to create a sale: <br>
 *You need create the clients and products previously before use this* <br>
-**POST** "/ventas/crear"
+**POST** "/ventas/crear"  <br>
 Example of the json:
 
 ```
@@ -157,7 +156,8 @@ Example of the json:
 }
 ```
 - Endpoint to delete a sale by id : <br>
-**GET** "/ventas/eliminar/{codigo_venta}"
+**DELETE** "/ventas/eliminar/{codigo_venta}" <br>
+*if you delete a sale, the stack of each product in the sale products are replenished.*
 
 - Endpoint to edit a sale: <br>
 **PUT** "ventas/editar/{codigo_venta}"
